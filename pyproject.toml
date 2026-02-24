@@ -1,0 +1,15 @@
+[project]
+name = "amazon-invoices"
+version = "0.1.0"
+description = "Playwright automation for downloading Amazon business invoices"
+requires-python = ">=3.10"
+dependencies = [
+  "playwright>=1.47.0",
+  "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
